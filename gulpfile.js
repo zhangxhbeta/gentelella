@@ -1,60 +1,78 @@
-var gulp = require('gulp'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
-    rename = require('gulp-rename'),
-    sass = require('gulp-ruby-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    browserSync = require('browser-sync').create();
+/**
+ * Require and assign gulp
+ * @type Module gulp|Module gulp
+ */
+var gulp = require('gulp');
+/**
+ * Require and assign gulp-rename
+ * @type Module gulp-sass|Module gulp-sass
+ */
+var sass = require('gulp-sass');
+/**
+ * Require and assign gulp-rename
+ * @type Module gulp-rename|Module gulp-rename
+ */
+var rename = require("gulp-rename");
+/**
+ * Require and assign gulp-clean-css
+ * @type Module gulp-clean-css|Module gulp-clean-css
+ */
+var cleanCSS = require('gulp-clean-css');
+/**
+ * Require and assign gulp-delete-file
+ * @type Module gulp-delete-file|Module gulp-delete-file
+ */
+var deletefile = require('gulp-delete-file');
 
-var DEST = 'build/';
+var config = {
+    /**
+     * css destination folder
+     * @type String
+     */
+    publicCssDir: './build/css',
 
-gulp.task('scripts', function() {
-    return gulp.src([
-        'src/js/helpers/*.js',
-        'src/js/*.js',
-      ])
-      .pipe(concat('custom.js'))
-      .pipe(gulp.dest(DEST+'/js'))
-      .pipe(rename({suffix: '.min'}))
-      .pipe(uglify())
-      .pipe(gulp.dest(DEST+'/js'))
-      .pipe(browserSync.stream());
-});
-
-// TODO: Maybe we can simplify how sass compile the minify and unminify version
-var compileSASS = function (filename, options) {
-  return sass('src/scss/*.scss', options)
-        .pipe(autoprefixer('last 2 versions', '> 5%'))
-        .pipe(concat(filename))
-        .pipe(gulp.dest(DEST+'/css'))
-        .pipe(browserSync.stream());
+    sourceSASSDir: './src/scss'
 };
 
-gulp.task('sass', function() {
-    return compileSASS('custom.css', {});
+/**
+ * Generation of css/bootstrap.css
+ */
+gulp.task('css', function() {
+    return gulp.src(config.sourceSASSDir + '/app.scss')
+        .pipe(sass({
+        }))
+        .pipe(gulp.dest(config.publicCssDir));
 });
 
-gulp.task('sass-minify', function() {
-    return compileSASS('custom.min.css', {style: 'compressed'});
+/**
+ * Deletion of minified files if exist
+ */
+gulp.task('delete-minified', function() {
+    var regexp = /^.*\.(min.*)/;
+
+    gulp.src(config.publicCssDir + '/*.css')
+        .pipe(deletefile({
+            reg: regexp,
+            /**
+             * true: delete file which match regexp
+             * false: delete file which don't match regexp
+             */
+            deleteMatch: true
+        }))
 });
 
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: {
-            baseDir: './'
-        },
-        startPath: './production/index.html'
-    });
+/**
+ * Generation of *.min.css files
+ */
+gulp.task('minify-css', ['css', 'delete-minified'], function() {
+    return gulp.src(config.publicCssDir + '/*css')
+        .pipe(cleanCSS({
+            compatibility: 'ie8'
+        }))
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(gulp.dest(config.publicCssDir));
 });
 
-gulp.task('watch', function() {
-  // Watch .html files
-  gulp.watch('production/*.html', browserSync.reload);
-  // Watch .js files
-  gulp.watch('src/js/*.js', ['scripts']);
-  // Watch .scss files
-  gulp.watch('src/scss/*.scss', ['sass', 'sass-minify']);
-});
-
-// Default Task
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['css', 'minify-css', 'delete-minified']);
