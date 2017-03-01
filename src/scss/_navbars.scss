@@ -1,0 +1,41 @@
+/* 
+    Created on : Feb 15, 2017, 5:31:02 PM
+    Author     : Nissar Chababy <contact at funilrys dot com>
+*/
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: 500;
+    color: #ECF0F1 !important;
+    margin-left: 0 !important;
+    line-height: 32px;
+}
+
+.navbar-header {
+    background: #34495E;
+}
+
+.navbar-nav {
+    > li {
+        > a {
+            color: #fff !important;
+            font-weight: 500;
+            color: #ECF0F1 !important;
+            margin-left: 0 !important;
+            line-height: 32px;
+        }
+    }
+}
+
+.navbar-right {
+    margin-right: 0;
+}
+
+.navbar-static-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

@@ -1,0 +1,165 @@
+/* 
+    Created on : Feb 15, 2017, 7:18:44 PM
+    Author     : Nissar Chababy <contact at funilrys dot com>
+*/
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    color: #5A738E;
+    text-decoration: none;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus,
+:active,
+:focus,
+:visited,
+a,
+a:active,
+a:focus,
+a:visited {
+    outline: 0;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+.active {
+    a {
+        span {
+            &.fa {
+                text-align: right !important;
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+article {
+    &.media {
+        width: 100%;
+    }
+}
+
+body {
+    color: #73879C;
+    background: #2A3F54;
+    font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.471;
+
+    .container {
+        &.body {
+            .right_col {
+                background: #F7F7F7;
+            }
+        }
+    }
+}
+
+.center-margin {
+    margin: 0 auto;
+    float: none!important;
+}
+
+.expand {
+    display: block;
+    text-decoration: none;
+    color: #555;
+    cursor: pointer;
+
+    h2 {
+        width: 85%;
+        float: left;
+    }
+}
+
+.fixed_height_320 {
+    height: 320px;
+}
+
+.fixed_height_390 {
+    height: 390px;
+}
+
+.fixed_height_200 {
+    height: 200px;
+}
+
+footer {
+    background: #fff;
+    padding: 15px 20px;
+    display: block;
+}
+// TO check
+.footer_fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    footer {
+        @media (min-width: 768px) {
+            margin-left: 0;
+        }
+    }
+
+    .nav-sm {
+        footer {
+            margin-left: 0;
+        }
+    }
+}
+
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#left,
+#right {
+    display: table;
+}
+
+.line_30 {
+    line-height: 30px;
+}
+
+.main_content {
+    padding: 10px 20px;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+.main_content {
+    padding: 10px 20px;
+}

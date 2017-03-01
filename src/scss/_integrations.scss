@@ -1,0 +1,32 @@
+/* 
+    Created on : Feb 16, 2017, 10:14:27 AM
+    Author     : Nissar Chababy <contact at funilrys dot com>
+*/
+
+#integration-list {
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+
+    ul {
+        padding: 0;
+        margin: 20px 0;
+        color: #555;
+
+        > li {
+            list-style: none;
+            border-top: 1px solid #ddd;
+            display: block;
+            padding: 15px;
+            overflow: hidden;
+        }
+
+        > li:hover {
+            background: #efefef;
+        }
+    }
+
+    ul:last-child {
+        border-bottom: 1px solid #ddd;
+    }
+}

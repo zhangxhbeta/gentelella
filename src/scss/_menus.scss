@@ -1,0 +1,40 @@
+/* 
+    Created on : Feb 15, 2017, 6:16:47 PM
+    Author     : Nissar Chababy <contact at funilrys dot com>
+*/
+.menu_section {
+    margin-bottom: 35px;
+
+    h3 {
+        padding-left: 23px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: bold;
+        font-size: 11px;
+        margin-bottom: 0;
+        margin-top: 0;
+        text-shadow: 1px 1px #000;
+    }
+
+    > ul {
+        margin-top: 10px;
+    }
+}
+
+.main_menu {
+    span {
+        &.fa {
+            float: right;
+            text-align: center;
+            margin-top: 5px;
+            font-size: 10px;
+            min-width: inherit;
+            color: #C4CFDA;
+        }
+    }
+}
+
+.main_menu_side {
+    padding: 0;
+}

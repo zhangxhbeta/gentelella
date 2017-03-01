@@ -1,0 +1,22 @@
+/* 
+    Created on : Feb 16, 2017, 9:52:29 AM
+    Author     : Nissar Chababy <contact at funilrys dot com>
+*/
+table {
+    &.no-margin {
+        .progress {
+            margin-bottom: 0;
+        }
+    }
+
+    &.tile_info {
+        span {
+            &.right {
+                @media (min-width: 192px) and (max-width: 1270px) {
+                    margin-right: 7px;
+                    float: left;
+                }
+            }
+        }
+    }
+}

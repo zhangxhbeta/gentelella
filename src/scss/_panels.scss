@@ -1,0 +1,23 @@
+/* 
+    Created on : Feb 15, 2017, 11:13:48 PM
+    Author     : Nissar Chababy <contact at funilrys dot com>
+*/
+.panel_toolbox {
+    float: right;
+    min-width: 70px;
+
+    > li {
+        float: left;
+        cursor: pointer;
+
+        > a {
+            padding: 5px;
+            color: #C5C7CB;
+            font-size: 14px;
+        }
+
+        > a:hover {
+            background: #F5F7FA;
+        }
+    }
+}
