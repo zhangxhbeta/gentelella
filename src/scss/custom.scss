@@ -41,53 +41,7 @@
     padding: 4px 6px;
 }
 
-
-.jqstooltip {
-    background: #34495E !important;
-    width: 30px !important;
-    height: 22px !important;
-    text-decoration: none;
-}
-
-.tooltip {
-    display: block !important;
-}
-
-.tiles {
-    border-top: 1px solid #ccc;
-    margin-top: 15px;
-    padding-top: 5px;
-    margin-bottom: 0;
-}
-
-.tile {
-    overflow: hidden;
-}
-
-.top_tiles {
-    margin-bottom: 0;
-}
-
-.top_tiles .tile span {}
-
-.top_tiles .tile h2 {
-    font-size: 30px;
-    line-height: 30px;
-    margin: 3px 0 7px;
-    font-weight: bold;
-}
-
-article.media {
-    width: 100%;
-}
 /* *********  custom accordion  **************************** */
-*,
-*:after,
-*:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
 #integration-list {
     width: 100%;
