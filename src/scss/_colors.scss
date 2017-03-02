@@ -3,77 +3,78 @@
     Author     : Nissar Chababy <contact at funilrys dot com>
 */
 
-// We can create variable for this ?
+$default-blue: #3498DB;
+$default-light-blue: #73879C;
+$default-dark-blue: #34495E;
+$default-sky-blue: #50C1CF;
+$default-aero-blue: #9CC2CB;
+$default-purple: #9B59B6;
+$default-green: #1ABB9C;
+$default-orange: #F39C12;
+$default-red: #E74C3C;
+
+@mixin bg-color($bgcolor, $bordercolor, $color) {
+    background: $bgcolor !important;
+    border: 1px solid $bordercolor !important;
+    color: $color;
+}
+
 .blue {
-    color: #3498DB;
+    color: $default-blue;
 }
 .purple {
-    color: #9B59B6;
+    color:$default-purple;
 }
 .green {
-    color: #1ABB9C;
+    color: $default-green;
 }
 .aero {
-    color: #9CC2CB;
+    color: $default-aero-blue;
 }
 .red {
-    color: #E74C3C;
+    color: $default-red;
 }
 .dark {
-    color: #34495E;
+    color: $default-dark;
 }
 
 .border-blue {
-    border-color: #3498DB !important;
+    border-color: $default-blue !important;
 }
 .border-purple {
-    border-color: #9B59B6 !important;
+    border-color: $default-purple !important;
 }
 .border-green {
-    border-color: #1ABB9C !important;
+    border-color: $default-green !important;
 }
 .border-aero {
-    border-color: #9CC2CB !important;
+    border-color: $default-aero-blue !important;
 }
 .border-red {
-    border-color: #E74C3C !important;
+    border-color: $default-red !important;
 }
 .border-dark {
-    border-color: #34495E !important;
+    border-color: $default-dark !important;
 }
 
 .bg-white {
-    background: #fff !important;
-    border: 1px solid #fff !important;
-    color: #73879C;
+    @include bg-color(white, white, $default-light-blue);
 }
 .bg-green {
-    background: #1ABB9C !important;
-    border: 1px solid #1ABB9C !important;
-    color: #fff;
+    @include bg-color($default-green, $default-green, white);
 }
 .bg-red {
-    background: #E74C3C !important;
-    border: 1px solid #E74C3C !important;
-    color: #fff;
+    @include bg-color($default-red, $default-red, white);
 }
 .bg-blue {
-    background: #3498DB !important;
-    border: 1px solid #3498DB !important;
-    color: #fff;
+    @include bg-color($default-blue, $default-blue, white);
 }
 .bg-orange {
-    background: #F39C12 !important;
-    border: 1px solid #F39C12 !important;
-    color: #fff;
+    @include bg-color($default-orange, $default-orange, white);
 }
 .bg-purple {
-    background: #9B59B6 !important;
-    border: 1px solid #9B59B6 !important;
-    color: #fff;
+    @include bg-color($default-purple, $default-purple, white);
 }
 .bg-blue-sky {
-    background: #50C1CF !important;
-    border: 1px solid #50C1CF !important;
-    color: #fff;
+    @include bg-color($default-sky-blue, $default-sky-blue, white);
 }
