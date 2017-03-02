@@ -1,0 +1,24 @@
+/* 
+    Created on : Mar 2, 2017, 10:51:37 AM
+    Author     : Nissar Chababy <contact at funilrys dot com>
+*/
+
+.detail {
+    margin: 10px 0 10px 0px;
+    display: none;
+    line-height: 22px;
+    height: 150px;
+
+    a {
+        text-decoration: none;
+        color: #C0392B;
+        border: 1px solid #C0392B;
+        padding: 6px 10px 5px;
+        font-size: 13px;
+        margin-right: 7px; 
+    }
+
+    span {
+        margin: 0;
+    }
+}
