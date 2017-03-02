@@ -62,16 +62,36 @@
 }
 
 .x_title {
+    border-bottom: 2px solid #E6E9ED;
+    padding: 1px 5px 6px;
+    margin-bottom: 10px;  
+    
+    .filter {
+        width: 40%;
+        float: right;
+    }
+
     h2 {
+        margin: 5px 0 6px;
+        float: left;
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
         @media (max-width: 1200px) {
             width: 62%;
             font-size: 17px;
         }
 
         small {
+            margin-left: 10px;
             @media (max-width: 1270px) and (min-width: 192px) {
                 display: none;
             }
         }
+    }
+
+    span {
+        color: #BDBDBD;
     }
 }
