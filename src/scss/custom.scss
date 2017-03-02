@@ -31,42 +31,6 @@
     padding: 0 40px;
 }
 
-.nav.side-menu > li.active,
-.nav.side-menu > li.current-page {
-    border-right: 5px solid #1ABB9C;
-}
-
-.nav li.current-page {
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.nav li li li.current-page {
-    background: none;
-}
-
-.nav li li.current-page a {
-    color: #fff;
-}
-
-.nav.side-menu > li.active > a {
-    text-shadow: rgba(0, 0, 0, 0.25) 0 -1px 0;
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5b6479), color-stop(100%, #4c5566)), #686e78;
-    background: -webkit-linear-gradient(#334556, #2C4257), #2A3F54;
-    background: -moz-linear-gradient(#334556, #2C4257), #2A3F54;
-    background: -o-linear-gradient(#334556, #2C4257), #2A3F54;
-    background: linear-gradient(#334556, #2C4257), #2A3F54;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
-    -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
-}
-
-.navbar-brand,
-.navbar-nav > li > a {
-    font-weight: 500;
-    color: #ECF0F1 !important;
-    margin-left: 0 !important;
-    line-height: 32px;
-}
 
 .site_title {
     text-overflow: ellipsis;
@@ -86,65 +50,6 @@
 .site_title:focus,
 .site_title:hover {
     text-decoration: none;
-}
-
-.nav.navbar-nav > li > a {
-    color: #515356 !important;
-}
-
-.nav.top_menu > li > a {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-    color: #34495E !important;
-}
-
-.nav > li > a:focus,
-.nav > li > a:hover {
-    background-color: transparent;
-}
-
-.top_search {
-    padding: 0;
-}
-
-.top_search .form-control {
-    border-right: 0;
-    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.075);
-    border-radius: 25px 0 0 25px;
-    padding-left: 20px;
-    border: 1px solid rgba(221, 226, 232, 0.49);
-}
-
-.top_search .form-control:focus {
-    border: 1px solid rgba(221, 226, 232, 0.49);
-    border-right: 0;
-}
-
-.top_search .input-group-btn button {
-    border-radius: 0 25px 25px 0;
-    border: 1px solid rgba(221, 226, 232, 0.49);
-    border-left: 0;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    color: #93A2B2;
-    margin-bottom: 0 !important;
-}
-
-.toggle {
-    float: left;
-    margin: 0;
-    padding-top: 16px;
-    width: 70px;
-}
-
-.toggle a {
-    padding: 15px 15px 0;
-    margin: 0;
-    cursor: pointer;
-}
-
-.toggle a i {
-    font-size: 26px;
 }
 
 .nav.child_menu > li > a {
