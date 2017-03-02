@@ -31,17 +31,6 @@ legend {
     height: 280px;
 }
 
-.pagination.pagination-split li {
-    display: inline-block;
-    margin-right: 3px;
-}
-
-.pagination.pagination-split li a {
-    border-radius: 4px;
-    color: #768399;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-}
 /** Contacts **/
 
 
@@ -337,10 +326,6 @@ td.group {
 td.details {
     background-color: #d1cfd0;
     border: 2px solid #A19B9E;
-}
-
-.example_alt_pagination div.dataTables_info {
-    width: 40%;
 }
 
 .paging_full_numbers {
