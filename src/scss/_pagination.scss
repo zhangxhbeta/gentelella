@@ -1,0 +1,28 @@
+/* 
+    Created on : Mar 2, 2017, 10:59:31 AM
+    Author     : Nissar Chababy <contact at funilrys dot com>
+*/
+
+.pagination {
+    &.pagination-split{
+        li {
+            display: inline-block;
+            margin-right: 3px;
+
+            a {
+                border-radius: 4px;
+                color: #768399;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+            }
+        }
+    }
+}
+
+.example_alt_pagination {
+    div {
+        &.dataTables_info {
+            width: 40%;
+        }
+    }
+}
