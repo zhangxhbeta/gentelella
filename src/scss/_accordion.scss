@@ -1,0 +1,23 @@
+/* 
+    Created on : Mar 2, 2017, 10:47:58 AM
+    Author     : Nissar Chababy <contact at funilrys dot com>
+*/
+
+.accordion {
+    .panel{
+        margin-bottom: 5px;
+        border-radius: 0;
+        border-bottom: 1px solid #efefef;
+    }
+    
+    .panel:hover{
+        background: #F2F5F7;
+    }
+
+    .panel-heading{
+        background: #F2F5F7;
+        padding: 13px;
+        width: 100%;
+        display: block;
+    }
+}
