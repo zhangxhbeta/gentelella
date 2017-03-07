@@ -5,7 +5,8 @@
   "scripts": {
     "test": "(npm start > /dev/null &) && (npm run casper:desktop)",
     "casper:desktop": "casperjs test test/desktop.js",
-    "start": "http-server -a localhost -p 8000 -c-1 ./"
+    "start": "http-server -a localhost -p 8000 -c-1 ./",
+    "build": "gulp build-sass"
   },
   "repository": {
     "type": "git",

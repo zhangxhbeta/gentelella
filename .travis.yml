@@ -1,11 +1,12 @@
+dist: trusty
+
 language: node_js
 node_js:
-  - "node"
-branches:
-  only:
-    - dev-sass
+  - "6"
+
 install:
-  - npm install
-before_script:
-  - npm install -g gulp
-  - gulp
+  - npm install -g phantomjs casperjs gulp
+
+script:
+  #npm test
+  npm run build

@@ -29,6 +29,10 @@ gulp.task('sass', function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task('build-sass', function () {
+    return gulp.src('src/scss/app.scss').pipe(sass());
+});
+
 gulp.task('browser-sync', function () {
     browserSync.init({
         server: {
