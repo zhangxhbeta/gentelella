@@ -1,0 +1,59 @@
+/*
+ * Login
+ */
+.login {
+    background:#F7F7F7;
+
+    .fa {
+        font-size: 26px;
+    }
+}
+.hiddenanchor {
+    display: none;
+}
+.login_wrapper {
+    right: 0px;
+    margin: 0px auto;
+    margin-top: 5%;
+    max-width: 350px;
+    position: relative;
+}
+.registration_form,
+.login_form {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+.registration_form {
+    z-index: 21;
+    opacity: 0;
+}
+.login_form {
+    z-index: 22;
+}
+#signup:target ~ .login_wrapper {
+    .registration_form {
+        z-index: 22;
+        animation-name: fadeInLeft;
+        animation-delay: .1s;
+    }
+    .login_form {
+        animation-name: fadeOutLeft;
+    }
+}
+#signin:target ~ .login_wrapper {
+    .login_form {
+        z-index: 22;
+        animation-name: fadeInLeft;
+        animation-delay: .1s;
+    }
+    .registration_form {
+        animation-name: fadeOutLeft;
+    }
+}
+
+.animate {
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}

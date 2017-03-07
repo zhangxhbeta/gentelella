@@ -1,0 +1,6 @@
+// Mixin for .bg-xxxx classes
+@mixin bg-color($bgcolor, $bordercolor, $color) {
+    background: $bgcolor !important;
+    border: 1px solid $bordercolor !important;
+    color: $color;
+}

@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 2, 2017, 12:20:40 PM
+    Author     : Nissar Chababy <contact at funilrys dot com>
+*/
+
+.paging_full_numbers {
+    width: 400px;
+    height: 22px;
+    line-height: 22px;
+    a {
+        &.paginate_active {
+            background-color: rgba(38, 185, 154, 0.59) !important;
+            border-color: rgba(38, 185, 154, 0.59) !important;
+            border: 1px solid #aaa;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            padding: 2px 5px;
+            margin: 0 3px;
+            cursor: pointer;
+            background-color: #99B3FF;
+        }
+
+        &.paginate_button{
+            border: 1px solid #aaa;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            padding: 2px 5px;
+            margin: 0 3px;
+            cursor: pointer;
+            background-color: #ddd;
+        }
+
+        &.paginate_button:hover {
+            background-color: #ccc;
+            text-decoration: none !important;
+        }
+
+    }
+
+    a:active {
+        outline: none
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}
