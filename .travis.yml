@@ -3,7 +3,7 @@ node_js:
   - "node"
 branches:
   only:
-    - angular
+    - dev-sass
 install:
   - npm install
 before_script:
