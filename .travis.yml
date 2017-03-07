@@ -1,8 +1,11 @@
 language: node_js
 node_js:
   - "node"
+branches:
+  only:
+    - angular
 install:
   - npm install
 before_script:
   - npm install -g gulp
-script: gulp
+  - gulp
