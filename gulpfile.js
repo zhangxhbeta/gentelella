@@ -23,6 +23,11 @@ var cleanCSS = require('gulp-clean-css');
  * @type Module gulp-delete-file|Module gulp-delete-file
  */
 var deletefile = require('gulp-delete-file');
+/**
+ * Require and assign gulp-autoprefixer
+ * @type Module gulp-autoprefixer|Module gulp-autoprefixer
+ */
+var autoprefixer = require("gulp-autoprefixer");
 
 var config = {
     /**
@@ -41,6 +46,7 @@ gulp.task('css', function() {
     return gulp.src(config.sourceSASSDir + '/app.scss')
         .pipe(sass({
         }))
+        .pipe(autoprefixer({browsers: ['last 2 versions', '> 5%']}))
         .pipe(gulp.dest(config.publicCssDir));
 });
 
