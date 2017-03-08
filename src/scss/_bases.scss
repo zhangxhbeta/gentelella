@@ -13,6 +13,12 @@
 a {
     color: #5A738E;
     text-decoration: none;
+
+    &.DTTT_button {
+        border: 1px solid #E7E7E7 !important;
+        background: #E7E7E7 !important;
+        box-shadow: none !important;
+    }
 }
 
 .btn.active.focus,
@@ -54,7 +60,7 @@ article {
 }
 
 body {
-    color: #73879C;
+    color: $default-light-blue;
     background: #2A3F54;
     font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
     font-size: 13px;
@@ -70,9 +76,22 @@ body {
     }
 }
 
+.bulk-actions {
+    display: none;
+}
+
+
 .center-margin {
     margin: 0 auto;
     float: none!important;
+}
+
+div {
+    &.DTTT_button{
+        border: 1px solid #E7E7E7 !important;
+        background: #E7E7E7 !important;
+        box-shadow: none !important;
+    }
 }
 
 .expand {

@@ -2,14 +2,31 @@
  * Vendor Overrides
  * Include CSS overrides for vendor plugins here
  */
-
+// Vertical Tabs
+@import "overrides/vertical-tabs";
+// DataTables
+@import "overrides/datatables";
 // MorrisJS
 @import "overrides/morris";
+// NProgress
+@import "overrides/nprogress";
 // Bootstrap-wysiwyg
 @import "overrides/bootstrap-wysiwyg";
+// Select2
+@import "overrides/select2";
 // Switchery
 @import "overrides/switchery";
 // Normalize.css
 @import "overrides/normalize";
-// cropper
+// Cropper
 @import "overrides/cropper";
+// jQuery Smart Wizard
+@import "overrides/jquery-smart-wizard";
+// Bootstrap-progressbar
+@import "overrides/bootstrap-progressbar";
+// PNotify
+@import "overrides/pnotify";
+// FullCalendar
+@import "overrides/fullcalendar";
+// dropzone
+@import "overrides/dropzone";
