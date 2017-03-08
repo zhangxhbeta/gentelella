@@ -78,7 +78,8 @@
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   }
   &.ui-ribbon-primary .ui-ribbon {
-    &:after, &:before {
+    &:after,
+    &:before {
       border-top: 2px solid #5b90bf;
     }
   }
@@ -88,7 +89,8 @@
       bottom: -1px;
       right: 0;
     }
-    &:after, &:before {
+    &:after,
+    &:before {
       position: absolute;
       content: " ";
       line-height: 0;
