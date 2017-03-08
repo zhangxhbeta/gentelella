@@ -1,10 +1,11 @@
-var gulp = require('gulp'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
-    rename = require('gulp-rename'),
-    sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    browserSync = require('browser-sync').create();
+var gulp = require('gulp');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var rename = require('gulp-rename');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync').create();
+var handlebars = require('gulp-compile-handlebars');
 
 var DEST = 'build/';
 
@@ -33,6 +34,12 @@ gulp.task('build-sass', function () {
     return gulp.src('src/scss/app.scss').pipe(sass());
 });
 
+gulp.task('handlebars', function () {
+    return gulp.src('./src/pages/*.html')
+        .pipe(handlebars({}, {batch: ['./src/pages/templates']}))
+        .pipe(gulp.dest('./production/'));
+});
+
 gulp.task('browser-sync', function () {
     browserSync.init({
         server: {
@@ -44,7 +51,7 @@ gulp.task('browser-sync', function () {
 
 gulp.task('watch', function () {
     // Watch .html files
-    gulp.watch('production/*.html', browserSync.reload);
+    gulp.watch('src/pages/**/*.html', ['handlebars', browserSync.reload]);
     // Watch .js files
     gulp.watch('src/js/*.js', ['scripts']);
     // Watch .scss files
@@ -52,4 +59,6 @@ gulp.task('watch', function () {
 });
 
 // Default Task
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('build', ['handlebars', 'scripts', 'sass']);
+
+gulp.task('default', ['build', 'browser-sync', 'watch']);
