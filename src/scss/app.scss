@@ -3,9 +3,16 @@
     Author     : Nissar Chababy <contact at funilrys dot com>
 */
 
+// Import variables and mixins
+@import "variables";
+@import "mixins";
+
+// Import components
+// TODO: Move vendor overrides to overrides
 @import 'bases';
 @import 'accordion';
 @import 'borders';
+@import 'buttons';
 @import 'colors';
 @import 'colums';
 @import 'containers';
@@ -16,12 +23,12 @@
 @import 'menus';
 @import 'navbars';
 @import 'navs';
-@import 'nprogress';
+
+@import 'paging';
 @import 'pagination';
 @import 'panels';
 @import 'profiles';
 @import 'progress-bars';
-@import 'select2';
 @import 'sidebars';
 @import 'tables';
 @import 'tiles';
@@ -30,3 +37,11 @@
 @import 'tooltips';
 @import 'tops';
 @import 'weather';
+
+@import "media-gallery";
+@import "ecommerce";
+@import "login";
+@import "signup";
+
+// Vendor Overrides
+@import "overrides"

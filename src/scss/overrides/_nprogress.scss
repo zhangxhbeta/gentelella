@@ -1,0 +1,17 @@
+/*
+ * NProgress overrides
+ */
+#nprogress {
+    .bar {
+        background: $default-green;
+    }
+
+    .peg {
+        box-shadow: 0 0 10px $default-green, 0 0 5px $default-green;
+    }
+
+    .spinner-icon {
+        border-top-color: $default-green;
+        border-left-color: $default-green;
+    }
+}

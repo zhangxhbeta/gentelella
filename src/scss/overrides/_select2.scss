@@ -1,7 +1,6 @@
-/* 
-    Created on : Feb 16, 2017, 9:22:38 AM
-    Author     : Nissar Chababy <contact at funilrys dot com>
-*/
+/*
+ * Select2 overrides
+ */
 .select2-container--default {
     &.select2-container--focus {
         .select2-selection--multiple {
@@ -16,7 +15,7 @@
         min-height: 38px;
 
         .select2-selection__rendered {
-            color: #73879C;
+            color: $default-light-blue;
             padding-top: 5px;
         }
 
