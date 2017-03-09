@@ -21,9 +21,9 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('sass', function () {
-    return gulp.src('src/scss/app.scss')
+    return gulp.src(['src/scss/custom.scss', 'src/scss/app.scss'])
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer('last 2 versions', '> 5%'))
+        .pipe(autoprefixer({browsers: ['last 2 versions', '> 5%']}))
         .pipe(concat('custom.css'))
         .pipe(gulp.dest(DEST + '/css'))
         .pipe(browserSync.stream());
