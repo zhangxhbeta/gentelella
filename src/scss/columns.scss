@@ -1,5 +1,13 @@
 .left_col {
     background: #2A3F54;
+
+    .mCSB_scrollTools {
+        width: 6px;
+    }
+
+    .mCSB_dragger {
+        max-height: 400px !important;
+    }
 }
 
 .right_col {
