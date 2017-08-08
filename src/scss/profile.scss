@@ -1,0 +1,47 @@
+.profile {
+    &.img_2 {
+        text-align: center;
+
+        .profile_info {
+            padding      : 15px 10px 0;
+            width        : 100%;
+            margin-bottom: 10px;
+            float        : left;
+        }
+
+        .profile_pic {
+            width: 100%;
+
+            .img-circle {
+                &.profile_img {
+                    width : 50%;
+                    margin: 10px 0 0;
+                }
+            }
+        }
+    }
+}
+
+.profile_info {
+    padding: 25px 10px 10px;
+    width  : 65%;
+    float  : left;
+
+    h2 {
+        font-size  : 14px;
+        color      : #ECF0F1;
+        margin     : 0;
+        font-weight: 300;
+    }
+
+    span {
+        font-size  : 13px;
+        line-height: 30px;
+        color      : #BAB8B8;
+    }
+}
+
+.profile_pic {
+    width: 35%;
+    float: left;
+}
