@@ -1,3 +1,16 @@
+.main_menu {
+    span {
+        &.fa {
+            float     : right;
+            text-align: center;
+            margin-top: 5px;
+            font-size : 10px;
+            min-width : inherit;
+            color     : #C4CFDA;
+        }
+    }
+}
+
 .menu_section {
     margin-bottom: 35px;
 
