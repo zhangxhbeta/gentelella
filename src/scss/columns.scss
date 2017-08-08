@@ -1,0 +1,9 @@
+.left_col {
+    background: #2A3F54;
+}
+
+.right_col {
+    @media (max-width: 991px) {
+        padding: 10px !important;
+    }
+}
