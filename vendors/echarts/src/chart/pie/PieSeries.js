@@ -5,6 +5,7 @@ define(function(require) {
     var List = require('../../data/List');
     var zrUtil = require('zrender/core/util');
     var modelUtil = require('../../util/model');
+    var numberUtil = require('../../util/number');
     var completeDimensions = require('../../data/helper/completeDimensions');
 
     var dataSelectableMixin = require('../../component/helper/selectableMixin');
@@ -20,7 +21,7 @@ define(function(require) {
             // Enable legend selection for each data item
             // Use a function instead of direct access because data reference may changed
             this.legendDataProvider = function () {
-                return this._dataBeforeProcessed;
+                return this.getRawData();
             };
 
             this.updateSelectedMap(option.data);
@@ -43,13 +44,20 @@ define(function(require) {
 
         // Overwrite
         getDataParams: function (dataIndex) {
-            var data = this._data;
+            var data = this.getData();
             var params = PieSeries.superCall(this, 'getDataParams', dataIndex);
-            var sum = data.getSum('value');
             // FIXME toFixed?
-            //
-            // Percent is 0 if sum is 0
-            params.percent = !sum ? 0 : +(data.get('value', dataIndex) / sum * 100).toFixed(2);
+
+            var valueList = [];
+            data.each('value', function (value) {
+                valueList.push(value);
+            });
+
+            params.percent = numberUtil.getPercentWithPrecision(
+                valueList,
+                dataIndex,
+                data.hostModel.get('percentPrecision')
+            );
 
             params.$vars.push('percent');
             return params;
@@ -92,6 +100,13 @@ define(function(require) {
             // 南丁格尔玫瑰图模式，'radius'（半径） | 'area'（面积）
             // roseType: null,
 
+            percentPrecision: 2,
+
+            // If still show when all data zero.
+            stillShowZeroSum: true,
+
+            // cursor: null,
+
             label: {
                 normal: {
                     // If rotate around circle
@@ -123,16 +138,13 @@ define(function(require) {
             },
             itemStyle: {
                 normal: {
-                    // color: 各异,
-                    borderColor: 'rgba(0,0,0,0)',
                     borderWidth: 1
                 },
-                emphasis: {
-                    // color: 各异,
-                    borderColor: 'rgba(0,0,0,0)',
-                    borderWidth: 1
-                }
+                emphasis: {}
             },
+
+            // Animation type canbe expansion, scale
+            animationType: 'expansion',
 
             animationEasing: 'cubicOut',
 
