@@ -340,6 +340,29 @@
 .calendar-exibit .calendar-table {
   padding: 0 0 4px 0; }
 
+.dropdown-menu {
+  border: medium none;
+  box-shadow: none;
+  display: none;
+  float: left;
+  font-size: 12px;
+  left: 0;
+  list-style: none outside none;
+  padding: 0;
+  position: absolute;
+  text-shadow: none;
+  top: 100%;
+  z-index: 9998;
+  border: 1px solid #D9DEE4;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+  .dropdown-menu.msg_list span {
+    white-space: normal; }
+  .dropdown-menu > li > a {
+    color: #5A738E; }
+  .dropdown-menu a {
+    cursor: pointer; }
+
 .dropzone {
   min-height: 300px;
   border: 1px solid #e5e5e5; }
@@ -1139,13 +1162,6 @@ fieldset {
   height: 50px;
   border-radius: 50%; }
 
-.switchery {
-  width: 32px;
-  height: 20px; }
-  .switchery > small {
-    width: 20px;
-    height: 20px; }
-
 table.dataTable td.focus,
 table.dataTable th.focus {
   outline: 2px solid #1ABB9C !important;
@@ -1251,6 +1267,13 @@ table.tile_info {
 
 td span {
   line-height: 28px; }
+
+.switchery {
+  width: 32px;
+  height: 20px; }
+  .switchery > small {
+    width: 20px;
+    height: 20px; }
 
 .tile {
   overflow: hidden; }
