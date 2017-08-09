@@ -1,0 +1,81 @@
+.progress {
+    border-radius: 0;
+
+    &.progress_sm {
+        border-radius: 0;
+        margin-bottom: 18px;
+        height       : 10px !important;
+
+        .progress-bar {
+            height: 10px !important;
+        }
+    }
+
+    &.vertical {
+        &.progress_wide {
+            width: 35px;
+        }
+    }
+}
+
+.progress_title {
+    .left {
+        float     : left;
+        text-align: left;
+    }
+
+    .right {
+        float      : right;
+        text-align : right;
+        font-weight: 300;
+    }
+}
+
+.progress_summary {
+    .data {
+        span {
+            text-align: right;
+            float     : right;
+        }
+    }
+
+    .more_info {
+        span {
+            text-align: right;
+            float     : right;
+        }
+    }
+
+    p {
+        margin-bottom: 3px;
+        width        : 100%;
+    }
+
+    .progress {
+        margin: 5px 0 12px !important;
+    }
+
+    .row {
+        margin-bottom: 5px;
+
+        .col-xs-2 {
+            padding: 0;
+        }
+    }
+}
+
+.progress-bar-dark {
+    background-color: #34495E !important;
+}
+
+.progress-bar-gray {
+    background-color: #BDC3C7 !important;
+}
+
+.progress-bar-info {
+    background-color: #3498DB;
+}
+
+.progress-bar-success {
+    background-color: #26B99A;
+}
