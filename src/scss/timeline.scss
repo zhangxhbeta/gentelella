@@ -1,0 +1,73 @@
+.byline {
+    -webkit-font-smoothing: antialiased;
+    font-style            : italic;
+    font-size             : 0.9375em;
+    line-height           : 1.3;
+    color                 : #aab6aa;
+}
+
+.timeline {
+    &.widget {
+        min-width: 0;
+        max-width: inherit;
+
+        .block {
+            margin-left: 5px;
+        }
+    }
+
+    .block {
+        margin     : 0;
+        border-left: 3px solid #e8e8e8;
+        overflow   : visible;
+        padding    : 10px 15px;
+        margin-left: 105px;
+    }
+
+    .byline {
+        padding: 0.25em 0;
+    }
+
+    h2 {
+        &.title {
+            position : relative;
+            font-size: 16px;
+            margin   : 0;
+
+            &:before {
+                content      : '';
+                position     : absolute;
+                left         : -23px;
+                top          : 3px;
+                display      : block;
+                width        : 14px;
+                height       : 14px;
+                border       : 3px solid #d2d3d2;
+                border-radius: 14px;
+                background   : #f9f9f9;
+            }
+        }
+    }
+
+    .tag {
+        display  : block;
+        height   : 30px;
+        font-size: 13px;
+        padding  : 8px;
+
+        span {
+            display      : block;
+            overflow     : hidden;
+            width        : 100%;
+            white-space  : nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .tags {
+        position: absolute;
+        top     : 15px;
+        left    : 0;
+        width   : 84px;
+    }
+}
