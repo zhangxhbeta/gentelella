@@ -1,3 +1,131 @@
+.nav {
+    &.child_menu {
+        display: none;
+
+        > li {
+            > a {
+                color    : rgba(255, 255, 255, 0.75);
+                font-size: 12px;
+                padding  : 9px;
+            }
+        }
+
+        li {
+            padding-left: 36px;
+
+            &.active,
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.06);
+            }
+
+            > a {
+                color      : #E7E7E7;
+                font-weight: 500;
+                position   : relative;
+                display    : block;
+                padding    : 13px 15px 12px;
+            }
+
+            li {
+                &.active,
+                &:hover {
+                    background: none;
+                    color     : #fff;
+                }
+            }
+        }
+    }
+
+    &.navbar-nav {
+        > li {
+            > a {
+                color: #515356 !important;
+            }
+        }
+    }
+
+    &.side-menu {
+        > li {
+            position: relative;
+            display : block;
+            cursor  : pointer;
+
+            &.active,
+            &.current-page {
+                border-right: 5px solid #1ABB9C;
+            }
+
+            &.active {
+                > a {
+                    text-shadow       : rgba(0, 0, 0, 0.25) 0 -1px 0;
+                    background        : -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5b6479), color-stop(100%, #4c5566)), #686e78;
+                    background        : -webkit-linear-gradient(#334556, #2C4257), #2A3F54;
+                    background        : -moz-linear-gradient(#334556, #2C4257), #2A3F54;
+                    background        : -o-linear-gradient(#334556, #2C4257), #2A3F54;
+                    background        : linear-gradient(#334556, #2C4257), #2A3F54;
+                    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
+                    -moz-box-shadow   : rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
+                    box-shadow        : rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
+                }
+            }
+
+            &.current-page {
+                background: rgba(255, 255, 255, 0.05);
+            }
+
+            > a {
+                color        : #E7E7E7;
+                font-weight  : 500;
+                margin-bottom: 6px;
+
+                &:focus,
+                &:hover {
+                    text-decoration: none;
+                    background     : transparent;
+                }
+
+                &:hover {
+                    color: #F2F5F7 !important;
+                }
+            }
+        }
+    }
+
+    &.top_menu {
+        > li {
+            > a {
+                position: relative;
+                display : block;
+                padding : 10px 15px;
+                color   : #34495E !important;
+            }
+        }
+    }
+
+    > li {
+        a {
+            &:focus,
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+
+    li {
+        li {
+            li {
+                &.current-page {
+                    background: none;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .nav-md {
     .container {
         &.body {
@@ -33,6 +161,45 @@
                 @media (max-width: 991px) {
                     width        : 100%;
                     padding-right: 0;
+                }
+            }
+        }
+    }
+
+    ul {
+        &.nav {
+            &.child_menu {
+                li {
+                    &:after {
+                        border-left: 1px solid #425668;
+                        bottom     : 0;
+                        content    : '';
+                        left       : 27px;
+                        position   : absolute;
+                        top        : 0;
+                    }
+
+                    &:before {
+                        background           : #425668;
+                        bottom               : auto;
+                        content              : '';
+                        height               : 8px;
+                        left                 : 23px;
+                        margin-top           : 15px;
+                        position             : absolute;
+                        right                : auto;
+                        width                : 8px;
+                        z-index              : 1;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius   : 50%;
+                        border-radius        : 50%;
+                    }
+
+                    &:last-child {
+                        &::after {
+                            bottom: 50%;
+                        }
+                    }
                 }
             }
         }
@@ -92,6 +259,10 @@
                 z-index    : 2;
             }
         }
+    }
+
+    footer {
+        margin-left: 70px;
     }
 
     .hidden-small {
