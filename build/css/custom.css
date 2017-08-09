@@ -919,11 +919,17 @@ table.tile td {
           float: right;
           margin-right: 13px; }
 table.tile_info {
-  width: 100%; }
-  @media (min-width: 192px) and (max-width: 1270px) {
-    table.tile_info span.right {
-      margin-right: 7px;
-      float: left; } }
+  width: 100%;
+  padding: 10px 15px; }
+  table.tile_info span.right {
+    margin-right: 0;
+    float: right;
+    position: absolute;
+    right: 4%; }
+    @media (min-width: 192px) and (max-width: 1270px) {
+      table.tile_info span.right {
+        margin-right: 7px;
+        float: left; } }
   table.tile_info td {
     text-align: left;
     padding: 1px;
