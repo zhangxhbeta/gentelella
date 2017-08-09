@@ -269,6 +269,10 @@
 .calendar-exibit .calendar-table {
   padding: 0 0 4px 0; }
 
+.dropzone {
+  min-height: 300px;
+  border: 1px solid #e5e5e5; }
+
 .fc-state-default {
   background: #f5f5f5;
   color: #73879C; }
