@@ -1,0 +1,190 @@
+table {
+    &.dataTable {
+        td,
+        th {
+            &.focus {
+                outline       : 2px solid #1ABB9C !important;
+                outline-offset: -1px;
+            }
+        }
+    }
+
+    &.display {
+        margin: 0 auto;
+        clear : both;
+        width : 100%;
+
+        td {
+            padding: 3px 10px;
+
+            &.center {
+                text-align: center;
+            }
+        }
+
+        tfoot {
+            th {
+                padding    : 3px 18px 3px 10px;
+                border-top : 1px solid black;
+                font-weight: bold;
+            }
+        }
+
+        thead {
+            td,
+            th {
+                &:active {
+                    outline: none;
+                }
+            }
+
+            th {
+                padding      : 8px 18px 8px 10px;
+                border-bottom: 1px solid black;
+                font-weight  : bold;
+                cursor       : pointer;
+            }
+        }
+
+        tr {
+            &.heading2 {
+                td {
+                    border-bottom: 1px solid #aaa;
+                }
+            }
+        }
+    }
+
+    &.countries_list {
+        width: 100%;
+
+        td {
+            padding    : 0 10px;
+            line-height: 30px;
+            border-top : 1px solid #eeeeee;
+        }
+    }
+
+    &.jambo_table {
+        border: 1px solid rgba(221, 221, 221, 0.78);
+
+        tbody {
+            tr {
+                &:hover {
+                    td {
+                        background   : rgba(38, 185, 154, 0.07);
+                        border-top   : 1px solid rgba(38, 185, 154, 0.11);
+                        border-bottom: 1px solid rgba(38, 185, 154, 0.11);
+                    }
+                }
+
+                &.selected {
+                    background: rgba(38, 185, 154, 0.16);
+
+                    td {
+                        border-top   : 1px solid rgba(38, 185, 154, 0.40);
+                        border-bottom: 1px solid rgba(38, 185, 154, 0.40);
+                    }
+                }
+            }
+        }
+
+        thead {
+            background: rgba(52, 73, 94, 0.94);
+            color     : #ECF0F1;
+        }
+    }
+
+    &.no-margin {
+        progress {
+            margin-bottom: 0;
+        }
+    }
+
+    &.tile {
+        h3,
+        h4,
+        span {
+            font-weight   : bold;
+            vertical-align: middle !important;
+        }
+
+        td,
+        th {
+            text-align: center;
+        }
+
+        th {
+            border-bottom: 1px solid #E6ECEE;
+        }
+
+        td {
+            padding: 5px 0;
+
+            ul {
+                text-align  : left;
+                padding-left: 0;
+
+                li {
+                    list-style: none;
+                    width     : 100%;
+
+                    a {
+                        width: 100%;
+
+                        big {
+                            right       : 0;
+                            float       : right;
+                            margin-right: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.tile_info {
+        width: 100%;
+
+        span {
+            &.right {
+                @media (min-width: 192px) and (max-width: 1270px) {
+                    margin-right: 7px;
+                    float       : left;
+                }
+            }
+        }
+
+        td {
+            text-align: left;
+            padding   : 1px;
+            font-size : 15px;
+
+            &:first-child {
+                width: 83%;
+            }
+
+            i {
+                margin-right: 8px;
+                font-size   : 17px;
+                float       : left;
+                width       : 18px;
+                line-height : 28px;
+            }
+
+            p {
+                white-space  : nowrap;
+                overflow     : hidden;
+                text-overflow: ellipsis;
+                margin       : 0;
+                line-height  : 28px;
+            }
+        }
+    }
+}
+
+td {
+    span {
+        line-height: 28px;
+    }
+}
