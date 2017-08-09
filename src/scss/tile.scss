@@ -1,0 +1,214 @@
+.tile {
+    overflow: hidden;
+    @media (max-width: 1200px) {
+        zoom  : 85%;
+        height: inherit;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.tile_count {
+    margin-bottom: 20px;
+    margin-top   : 20px;
+
+    .tile_stats_count {
+        border-bottom: 1px solid #D9DEE4;
+        padding      : 0 10px 0 20px;
+        text-overflow: ellipsis;
+        overflow     : hidden;
+        white-space  : nowrap;
+        position     : relative;
+        @media (min-width: 992px) {
+            margin-bottom : 10px;
+            border-bottom : 0;
+            padding-bottom: 10px;
+        }
+
+        &:before {
+            content    : '';
+            position   : absolute;
+            left       : 0;
+            height     : 65px;
+            border-left: 2px solid #ADB2B5;
+            margin-top : 10px;
+        }
+
+        &:first-child {
+            &:before {
+                @media (min-width:992px) {
+                    border-left: 0;
+                }
+            }
+        }
+
+        .count {
+            font-size  : 30px;
+            line-height: 47px;
+            font-weight: 600;
+            @media (min-width:768px) {
+                font-size: 40px;
+            }
+            @media (min-width: 992px) and (max-width: 1100px) {
+                font-size: 30px;
+            }
+
+            span {
+                font-size: 12px;
+                @media (min-width:768px) {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .count_bottom {
+            i {
+                width: 12px;
+            }
+        }
+    }
+}
+
+.tile_head {
+    h4 {
+        margin-top   : 0;
+        margin-bottom: 5px;
+    }
+}
+
+.tile_header {
+    border-bottom: transparent;
+    padding      : 7px 15px;
+    margin-bottom: 15px;
+    background   : #E7E7E7;
+}
+
+.tile_info {
+    a {
+        text-overflow: ellipsis;
+    }
+}
+
+.tiles {
+    border-top   : 1px solid #ccc;
+    margin-top   : 15px;
+    padding-top  : 5px;
+    margin-bottom: 0;
+}
+
+.tiles-bottom {
+    padding   : 5px 10px;
+    margin-top: 10px;
+    background: rgba(194, 194, 194, 0.3);
+    text-align: left;
+}
+
+.tile-stats {
+    position               : relative;
+    display                : block;
+    margin-bottom          : 12px;
+    border                 : 1px solid #E4E4E4;
+    -webkit-border-radius  : 5px;
+    overflow               : hidden;
+    padding-bottom         : 5px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius     : 5px;
+    -moz-background-clip   : padding;
+    border-radius          : 5px;
+    background-clip        : padding-box;
+    background             : #FFF;
+    -moz-transition        : all 300ms ease-in-out;
+    -o-transition          : all 300ms ease-in-out;
+    -webkit-transition     : all 300ms ease-in-out;
+    transition             : all 300ms ease-in-out;
+
+    > .dash-box-footer {
+        position       : relative;
+        text-align     : center;
+        margin-top     : 5px;
+        padding        : 3px 0;
+        color          : #fff;
+        color          : rgba(255, 255, 255, 0.8);
+        display        : block;
+        z-index        : 10;
+        background     : rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+
+        &:hover {
+            color     : #fff;
+            background: rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    &:hover {
+        .icon {
+            i {
+                animation-name                   : tansformAnimation;
+                animation-duration               : 0.5s;
+                animation-iteration-count        : 1;
+                color                            : rgba(58, 58, 58, 0.41);
+                animation-timing-function        : ease;
+                animation-fill-mode              : forwards;
+                -webkit-animation-name           : tansformAnimation;
+                -webkit-animation-duration       : 0.5s;
+                -webkit-animation-iteration-count: 1;
+                -webkit-animation-timing-function: ease;
+                -webkit-animation-fill-mode      : forwards;
+                -moz-animation-name              : tansformAnimation;
+                -moz-animation-duration          : 0.5s;
+                -moz-animation-iteration-count   : 1;
+                -moz-animation-timing-function   : ease;
+                -moz-animation-fill-mode         : forwards;
+            }
+        }
+    }
+
+    .count,
+    h3,
+    p {
+        position: relative;
+        margin  : 0 0 0 10px;
+        z-index : 5;
+        padding : 0;
+    }
+
+    .count {
+        font-size  : 38px;
+        font-weight: bold;
+        line-height: 1.65857143;
+    }
+
+    h3 {
+        color: #BAB8B8;
+    }
+
+    .icon {
+        width   : 20px;
+        height  : 20px;
+        color   : #BAB8B8;
+        position: absolute;
+        right   : 53px;
+        top     : 22px;
+        z-index : 1;
+
+        i {
+            margin        : 0;
+            font-size     : 60px;
+            line-height   : 0;
+            vertical-align: bottom;
+            padding       : 0;
+        }
+    }
+
+    p {
+        margin-top: 5px;
+        font-size : 12px;
+    }
+
+    .sparkline {
+        padding   : 10px;
+        text-align: center;
+    }
+}
