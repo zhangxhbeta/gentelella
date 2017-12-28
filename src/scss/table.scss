@@ -47,9 +47,25 @@ table {
         }
 
         tr {
+            &.even {
+                &.row_selected {
+                    td {
+                        background-color: #B0BED9;
+                    }
+                }
+            }
+
             &.heading2 {
                 td {
                     border-bottom: 1px solid #aaa;
+                }
+            }
+
+            &.odd {
+                &.row_selected {
+                    td {
+                        background-color: #9FAFD1;
+                    }
                 }
             }
         }
@@ -189,7 +205,30 @@ table {
 }
 
 td {
+    &.details {
+        background-color: #d1cfd0;
+        border          : 2px solid #A19B9E;
+    }
+
+    &.group {
+        background-color: #d1cfd0;
+        border-bottom   : 2px solid #A19B9E;
+        border-top      : 2px solid #A19B9E;
+    }
+
     span {
         line-height: 28px;
+    }
+}
+
+tfoot {
+    input {
+        margin: 0.5em 0;
+        width : 100%;
+        color : #444;
+
+        &.search_init {
+            color: #999;
+        }
     }
 }
