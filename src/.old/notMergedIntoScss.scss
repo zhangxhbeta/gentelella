@@ -1,7 +1,3 @@
-.active a span.fa {
-    text-align  : right !important;
-    margin-right: 4px;
-}
 @media (max-width: 1200px) {
     .graph {
         zoom  : 85%;
@@ -269,67 +265,6 @@
     height: 280px;
 }
 /** Contacts **/
-.profile_details:nth-child(3n) {
-    clear: both;
-}
-
-.profile_details .profile_view {
-    display   : inline-block;
-    padding   : 10px 0 0;
-    background: #fff;
-}
-
-.profile_details .profile_view .divider {
-    border-top : 1px solid #e5e5e5;
-    padding-top: 5px;
-    margin-top : 5px;
-}
-
-.profile_details .profile_view .ratings {
-    margin-bottom: 0;
-}
-
-.profile_details .profile_view .bottom {
-    background: #F2F5F7;
-    padding   : 9px 0;
-    border-top: 1px solid #E6E9ED;
-}
-
-.profile_details .profile_view .left {
-    margin-top: 20px;
-}
-
-.profile_details .profile_view .left p {
-    margin-bottom: 3px;
-}
-
-.profile_details .profile_view .right {
-    margin-top: 0;
-    padding   : 10px;
-}
-
-.profile_details .profile_view .img-circle {
-    border : 1px solid #E6E9ED;
-    padding: 2px;
-}
-
-.profile_details .profile_view h2 {
-    margin: 5px 0;
-}
-
-.profile_details .profile_view .ratings {
-    text-align: left;
-    font-size : 16px;
-}
-
-.profile_details .profile_view .brief {
-    margin     : 0;
-    font-weight: 300;
-}
-
-.profile_details .profile_left {
-    background: white;
-}
 
 .pagination.pagination-split li {
     display     : inline-block;
@@ -1294,15 +1229,6 @@ a.user-profile {
     width: 65%;
 }
 
-ul.count2 {
-    width       : 100%;
-    margin-left : 1px;
-    border      : 1px solid #ddd;
-    border-left : 0;
-    border-right: 0;
-    padding     : 10px 0;
-}
-
 /* ********* /widgets **************************** */
 
 .divider {
@@ -1331,12 +1257,6 @@ ul.count2 {
     margin: 0;
 }
 
-.profile_title {
-    background: #F5F7FA;
-    border    : 0;
-    padding   : 7px 0;
-    display   : flex;
-}
 
 .project_detail p {
     margin-bottom: 10px;
@@ -1345,11 +1265,6 @@ ul.count2 {
 .project_detail p.title {
     font-weight  : bold;
     margin-bottom: 0;
-}
-
-.avatar img {
-    border-radius: 50%;
-    max-width    : 45px;
 }
 /* ********* pricing **************************** */
 /* ********* /pricing **************************** */
@@ -1597,84 +1512,6 @@ ul.count2 {
 /* ********* ecommerce **************************** */
 /* ********* /ecommerce **************************** */
 /** login **/
-
-.login {
-    background: #F7F7F7;
-}
-
-.login .fa-paw {
-    font-size: 26px;
-}
-
-a.hiddenanchor {
-    display: none;
-}
-
-.login_wrapper {
-    right    : 0;
-    margin   : 5% auto 0;
-    max-width: 350px;
-    position : relative;
-}
-
-.login_form,
-.registration_form {
-    position: absolute;
-    top     : 0;
-    width   : 100%;
-}
-
-.registration_form {
-    z-index: 21;
-    opacity: 0;
-    width  : 100%;
-}
-
-.login_form {
-    z-index: 22;
-}
-
-#signin:target ~ .login_wrapper .login_form,
-#signup:target ~ .login_wrapper .registration_form {
-    z-index                : 22;
-    -webkit-animation-name : fadeInLeft;
-    -moz-animation-name    : fadeInLeft;
-    -ms-animation-name     : fadeInLeft;
-    -o-animation-name      : fadeInLeft;
-    animation-name         : fadeInLeft;
-    -webkit-animation-delay: 0.1s;
-    -moz-animation-delay   : 0.1s;
-    -o-animation-delay     : 0.1s;
-    -ms-animation-delay    : 0.1s;
-    animation-delay        : 0.1s;
-}
-
-#signin:target ~ .login_wrapper .registration_form,
-#signup:target ~ .login_wrapper .login_form {
-    -webkit-animation-name: fadeOutLeft;
-    -moz-animation-name   : fadeOutLeft;
-    -ms-animation-name    : fadeOutLeft;
-    -o-animation-name     : fadeOutLeft;
-    animation-name        : fadeOutLeft;
-}
-
-.animate {
-    -webkit-animation-duration       : 0.5s;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode      : both;
-    -moz-animation-duration          : 0.5s;
-    -moz-animation-timing-function   : ease;
-    -moz-animation-fill-mode         : both;
-    -o-animation-duration            : 0.5s;
-    -o-animation-timing-function     : ease;
-    -o-animation-fill-mode           : both;
-    -ms-animation-duration           : 0.5s;
-    -ms-animation-timing-function    : ease;
-    -ms-animation-fill-mode          : both;
-    animation-duration               : 0.5s;
-    animation-timing-function        : ease;
-    animation-fill-mode              : both;
-}
 /** /login **/
 /** signup **/
 

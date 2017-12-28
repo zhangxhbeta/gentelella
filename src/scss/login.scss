@@ -1,0 +1,78 @@
+.animate {
+    -webkit-animation-duration       : 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode      : both;
+    -moz-animation-duration          : 0.5s;
+    -moz-animation-timing-function   : ease;
+    -moz-animation-fill-mode         : both;
+    -o-animation-duration            : 0.5s;
+    -o-animation-timing-function     : ease;
+    -o-animation-fill-mode           : both;
+    -ms-animation-duration           : 0.5s;
+    -ms-animation-timing-function    : ease;
+    -ms-animation-fill-mode          : both;
+    animation-duration               : 0.5s;
+    animation-timing-function        : ease;
+    animation-fill-mode              : both;
+}
+
+.login {
+    background: #F7F7F7;
+
+    .fa-paw {
+        font-size: 26px;
+    }
+}
+
+.login_form,
+.registration_form {
+    position: absolute;
+    top     : 0;
+    width   : 100%;
+}
+
+.login_form {
+    z-index: 22;
+}
+
+.login_wrapper {
+    right    : 0;
+    margin   : 5% auto 0;
+    max-width: 350px;
+    position : relative;
+}
+
+.registration_form {
+    z-index: 21;
+    opacity: 0;
+    width  : 100%;
+}
+
+#signin,
+#signup {
+    &:target {
+        ~ {
+            .login_wrapper {
+                .login_form,
+                .registration_form {
+                    z-index                : 22;
+                    -webkit-animation-name : fadeInLeft;
+                    -moz-animation-name    : fadeInLeft;
+                    -ms-animation-name     : fadeInLeft;
+                    -o-animation-name      : fadeInLeft;
+                    animation-name         : fadeInLeft;
+                    -webkit-animation-delay: 0.1s;
+                    -moz-animation-delay   : 0.1s;
+                    -o-animation-delay     : 0.1s;
+                    -ms-animation-delay    : 0.1s;
+                    animation-delay        : 0.1s;
+                    -webkit-animation-name : fadeOutLeft;
+                    -moz-animation-name    : fadeOutLeft;
+                    -ms-animation-name     : fadeOutLeft;
+                    -o-animation-name      : fadeOutLeft;
+                    animation-name         : fadeOutLeft;
+                }
+            }
+        }
+    }
+}

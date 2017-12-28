@@ -45,10 +45,20 @@ a {
     border: 1px solid #E7E7E7 !important;
     background: #E7E7E7 !important;
     box-shadow: none !important; }
+  a.hiddenanchor {
+    display: none; }
   a.star {
     color: #428bca !important; }
   a.btn-danger, a.btn-primary, a.btn-success, a.btn-warning {
     color: #fff; }
+
+.active a span.fa {
+  text-align: right !important;
+  margin-right: 4px; }
+
+.avatar img {
+  border-radius: 50%;
+  max-width: 45px; }
 
 article .media {
   width: 100%; }
@@ -229,14 +239,21 @@ ul.bar_tabs {
     padding-right: 14px; }
     ul.bar_tabs.right li {
       float: right; }
-ul .count2 li {
-  width: 30%;
-  text-align: center; }
-  ul .count2 li h3 {
-    font-weight: 400;
-    margin: 0; }
-  ul .count2 li span {
-    font-weight: 300; }
+ul .count2 {
+  width: 100%;
+  margin-left: 1px;
+  border: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  padding: 10px 0; }
+  ul .count2 li {
+    width: 30%;
+    text-align: center; }
+    ul .count2 li h3 {
+      font-weight: 400;
+      margin: 0; }
+    ul .count2 li span {
+      font-weight: 300; }
 ul.messages {
   padding: 0;
   list-style: none; }
@@ -1157,6 +1174,57 @@ ul.widget_tally {
   float: left;
   padding-left: 20px; }
 
+.animate {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-timing-function: ease;
+  -moz-animation-fill-mode: both;
+  -o-animation-duration: 0.5s;
+  -o-animation-timing-function: ease;
+  -o-animation-fill-mode: both;
+  -ms-animation-duration: 0.5s;
+  -ms-animation-timing-function: ease;
+  -ms-animation-fill-mode: both;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both; }
+
+.login {
+  background: #F7F7F7; }
+  .login .fa-paw {
+    font-size: 26px; }
+
+.login_form,
+.registration_form {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.login_form {
+  z-index: 22; }
+
+.login_wrapper {
+  right: 0;
+  margin: 5% auto 0;
+  max-width: 350px;
+  position: relative; }
+
+.registration_form {
+  z-index: 21;
+  opacity: 0;
+  width: 100%; }
+
+#signin:target ~ .login_wrapper .login_form,
+#signin:target ~ .login_wrapper .registration_form,
+#signup:target ~ .login_wrapper .login_form,
+#signup:target ~ .login_wrapper .registration_form {
+  z-index: 22;
+  animation-name: fadeInLeft;
+  animation-delay: 0.1s;
+  animation-name: fadeOutLeft; }
+
 .main_menu .fa {
   width: 26px;
   opacity: 0.99;
@@ -1562,6 +1630,42 @@ fieldset {
       width: 50%;
       margin: 10px 0 0; }
 
+.profile_details:nth-child(3n) {
+  clear: both; }
+.profile_details .profile_left {
+  background: white; }
+.profile_details .profile_view {
+  display: inline-block;
+  padding: 10px 0 0;
+  background: #fff; }
+  .profile_details .profile_view h2 {
+    margin: 5px 0; }
+  .profile_details .profile_view .bottom {
+    background: #F2F5F7;
+    padding: 9px 0;
+    border-top: 1px solid #E6E9ED; }
+  .profile_details .profile_view .brief {
+    margin: 0;
+    font-weight: 300; }
+  .profile_details .profile_view .divider {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 5px;
+    margin-top: 5px; }
+  .profile_details .profile_view .img-circle {
+    border: 1px solid #E6E9ED;
+    padding: 2px; }
+  .profile_details .profile_view .left {
+    margin-top: 20px; }
+    .profile_details .profile_view .left p {
+      margin-bottom: 3px; }
+  .profile_details .profile_view .ratings {
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 16px; }
+  .profile_details .profile_view .right {
+    margin-top: 0;
+    padding: 10px; }
+
 .profile_info {
   padding: 25px 10px 10px;
   width: 65%;
@@ -1579,6 +1683,13 @@ fieldset {
 .profile_pic {
   width: 35%;
   float: left; }
+
+.profile_title {
+  background: #F5F7FA;
+  border: 0;
+  padding: 7px 0;
+  display: -ms-flexbox;
+  display: flex; }
 
 .progress {
   border-radius: 0; }
