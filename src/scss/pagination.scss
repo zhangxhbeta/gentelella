@@ -1,0 +1,15 @@
+.pagination {
+    &.pagination-split {
+        li {
+            display     : inline-block;
+            margin-right: 3px;
+
+            a {
+                border-radius        : 4px;
+                color                : #768399;
+                -moz-border-radius   : 4px;
+                -webkit-border-radius: 4px;
+            }
+        }
+    }
+}

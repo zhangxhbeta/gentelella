@@ -1,6 +1,7 @@
 .col-middle {
-  margin-top: 5%;
+    margin-top: 5%;
 }
+
 .col-md-55 {
     width        : 50%;
     margin-bottom: 10px;
@@ -81,6 +82,13 @@
     .mCSB_dragger {
         max-height: 400px !important;
     }
+}
+
+.mid_center {
+    width     : 370px;
+    margin    : 0 auto;
+    text-align: center;
+    padding   : 10px 20px;
 }
 
 .right_col {
