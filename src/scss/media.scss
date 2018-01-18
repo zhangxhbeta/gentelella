@@ -1,0 +1,51 @@
+.event {
+    .media-body {
+        a {
+            &.title {
+                font-weight: bold;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.media {
+    .date {
+        background   : #ccc;
+        width        : 52px;
+        margin-right : 10px;
+        border-radius: 10px;
+        padding      : 5px;
+
+        .month {
+            margin    : 0;
+            text-align: center;
+            color     : #fff;
+        }
+
+        .day {
+            text-align : center;
+            color      : #fff;
+            font-size  : 27px;
+            margin     : 0;
+            line-height: 27px;
+            font-weight: bold;
+        }
+    }
+
+    .profile_thumb {
+        border       : 1px solid;
+        width        : 50px;
+        height       : 50px;
+        margin       : 5px 10px 5px 0;
+        border-radius: 50%;
+        padding      : 9px 12px;
+
+        i {
+            font-size: 30px;
+        }
+    }
+}
