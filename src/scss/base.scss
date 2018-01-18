@@ -45,6 +45,10 @@ a {
         display: none;
     }
 
+    &.user-profile {
+        color: #5E6974 !important;
+    }
+
     &.star {
         color: #428bca !important;
     }
@@ -102,6 +106,10 @@ button {
     float : none!important;
 }
 
+.clear {
+    clear: both;
+}
+
 .container {
     width  : 100%;
     padding: 0;
@@ -122,6 +130,10 @@ body {
             }
         }
     }
+}
+
+.demo-placeholder {
+    height: 280px;
 }
 
 div {
@@ -159,6 +171,16 @@ div {
     height: 390px;
 }
 
+form {
+    &:after {
+        content   : '.';
+        display   : block;
+        height    : 0;
+        clear     : both;
+        visibility: hidden;
+    }
+}
+
 footer {
     background: #fff;
     padding   : 15px 20px;
@@ -185,6 +207,13 @@ footer {
                 margin-left: 0;
             }
         }
+    }
+}
+
+.graph {
+    @media (max-width: 1200px) {
+        zoom  : 85%;
+        height: inherit;
     }
 }
 
