@@ -1,3 +1,11 @@
+.example_alt_pagination {
+    div {
+        &.dataTables_info {
+            width: 40%;
+        }
+    }
+}
+
 .pagination {
     &.pagination-split {
         li {
