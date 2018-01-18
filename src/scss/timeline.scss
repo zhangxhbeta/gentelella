@@ -6,6 +6,26 @@
     color                 : #aab6aa;
 }
 
+.tag {
+    line-height: 1;
+    background : #1ABB9C;
+    color      : #fff !important;
+
+    &:after {
+        content       : ' ';
+        height        : 30px;
+        width         : 0;
+        position      : absolute;
+        left          : 100%;
+        top           : 0;
+        margin        : 0;
+        pointer-events: none;
+        border-top    : 14px solid transparent;
+        border-bottom : 14px solid transparent;
+        border-left   : 11px solid #1ABB9C;
+    }
+}
+
 .timeline {
     &.widget {
         min-width: 0;
