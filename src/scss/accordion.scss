@@ -1,0 +1,96 @@
+.accordion {
+    .panel {
+        margin-bottom: 5px;
+        border-radius: 0;
+        border-bottom: 1px solid #efefef;
+
+        &:hover {
+            background: #F2F5F7;
+        }
+    }
+
+    .panel-heading {
+        background: #F2F5F7;
+        padding   : 13px;
+        width     : 100%;
+        display   : block;
+    }
+}
+
+.detail {
+    margin     : 10px 0;
+    display    : none;
+    line-height: 22px;
+    height     : 150px;
+
+    a {
+        text-decoration: none;
+        color          : #C0392B;
+        border         : 1px solid #C0392B;
+        padding        : 6px 10px 5px;
+        font-size      : 13px;
+        margin-right   : 7px;
+    }
+
+    span {
+        margin: 0;
+    }
+}
+
+.expand {
+    display        : block;
+    text-decoration: none;
+    color          : #555;
+    cursor         : pointer;
+
+    h2 {
+        width: 85%;
+        float: left;
+    }
+}
+
+#integration-list {
+    width  : 100%;
+    margin : 0 auto;
+    display: table;
+
+    ul {
+        padding: 0;
+        margin : 20px 0;
+        color  : #555;
+
+        > li {
+            list-style: none;
+            border-top: 1px solid #ddd;
+            display   : block;
+            padding   : 15px;
+            overflow  : hidden;
+
+            &:hover {
+                background: #efefef;
+            }
+        }
+
+        &:last-child {
+            border-bottom: 1px solid #ddd;
+        }
+    }
+}
+
+#left,
+#right {
+    display: table;
+}
+
+.right-arrow {
+    width      : 10px;
+    float      : right;
+    font-weight: bold;
+    font-size  : 20px;
+}
+
+#sup {
+    display       : table-cell;
+    vertical-align: middle;
+    width         : 80%;
+}
