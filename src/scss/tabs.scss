@@ -1,0 +1,114 @@
+.tabs-left,
+.tabs-right {
+    border-bottom: none;
+    padding-top  : 2px;
+
+    > li {
+        float        : none;
+        margin-bottom: 2px;
+    }
+}
+
+.tabs-left {
+    border-right: 1px solid #F7F7F7;
+
+    > li {
+        margin-right: -1px;
+
+        > a {
+            border-radius: 4px 0 0 4px;
+            margin-right : 0;
+            display      : block;
+            background   : #F7F7F7;
+            text-overflow: ellipsis;
+            overflow     : hidden;
+        }
+
+        &.active {
+            a,
+            a:focus,
+            a:hover {
+                border-bottom-color: #F7F7F7;
+                border-right-color : transparent;
+            }
+        }
+    }
+}
+
+.tabs-right {
+    border-left: 1px solid #F7F7F7;
+
+    > li {
+        margin-left: -1px;
+
+        > a {
+            border-radius: 0 4px 4px 0;
+            margin-right : 0;
+            background   : #F7F7F7;
+            text-overflow: ellipsis;
+            overflow     : hidden;
+        }
+
+        &.active {
+            a,
+            a:focus,
+            a:hover {
+                border-bottom    : 1px solid #F7F7F7;
+                border-left-color: transparent;
+            }
+        }
+    }
+}
+
+.sideways {
+    margin-top: 50px;
+    border    : none;
+    position  : relative;
+
+    > li {
+        height       : 20px;
+        width        : 120px;
+        margin-bottom: 100px;
+
+        > a {
+            border-bottom     : 1px solid #ddd;
+            border-right-color: transparent;
+            text-align        : center;
+            border-radius     : 4px 4px 0 0;
+        }
+
+        &.active {
+            a,
+            a:focus,
+            a:hover {
+                border-bottom-color: transparent;
+                border-right-color : #ddd;
+                border-left-color  : #ddd;
+            }
+        }
+    }
+
+    &.tabs-left {
+        left: -50px;
+
+        > li {
+            -webkit-transform: rotate(-90deg);
+            -moz-transform   : rotate(-90deg);
+            -ms-transform    : rotate(-90deg);
+            -o-transform     : rotate(-90deg);
+            transform        : rotate(-90deg);
+        }
+    }
+
+    .tabs-right {
+        right: -50px;
+
+        > li {
+            -webkit-transform: rotate(90deg);
+            -moz-transform   : rotate(90deg);
+            -ms-transform    : rotate(90deg);
+            -o-transform     : rotate(90deg);
+            transform        : rotate(90deg);
+        }
+    }
+}
