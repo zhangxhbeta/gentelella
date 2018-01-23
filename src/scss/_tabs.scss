@@ -71,7 +71,7 @@
         margin-bottom: 100px;
 
         > a {
-            border-bottom     : 1px solid #ddd;
+            border-bottom     : 1px solid $alto;
             border-right-color: transparent;
             text-align        : center;
             border-radius     : 4px 4px 0 0;
@@ -82,8 +82,8 @@
             a:focus,
             a:hover {
                 border-bottom-color: transparent;
-                border-right-color : #ddd;
-                border-left-color  : #ddd;
+                border-right-color : $alto;
+                border-left-color  : $alto;
             }
         }
     }

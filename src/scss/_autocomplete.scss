@@ -1,5 +1,5 @@
 .autocomplete-selected {
-    background: #f0f0f0;
+    background: $gallery2;
 }
 
 .autocomplete-suggestion {
@@ -10,14 +10,14 @@
 }
 
 .autocomplete-suggestions {
-    border    : 1px solid #e4e4e4;
-    background: #F4F4F4;
+    border    : 1px solid $mercury;
+    background: $wild-sand;
     cursor    : default;
     overflow  : auto;
 
     strong {
         font-weight: normal;
-        color      : #3399ff;
+        color      : $dodger-blue;
         font-weight: bolder;
     }
 }

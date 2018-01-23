@@ -43,7 +43,7 @@
     margin-left     : -125px;
     margin-top      : -15px;
     padding         : 14px 0 2px;
-    border          : 1px solid #ddd;
+    border          : 1px solid $alto;
     text-align      : center;
     color           : #999;
     font-size       : 14px;
@@ -96,7 +96,7 @@
         }
 
         &.paginate_button {
-            background-color: #ddd;
+            background-color: $alto;
 
             &:hover {
                 background-color: #ccc;

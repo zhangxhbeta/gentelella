@@ -45,12 +45,12 @@
         border-radius        : 0;
         text-align           : center;
         color                : #666;
-        border               : 1px solid #ddd;
+        border               : 1px solid $alto;
         background-color     : #fafafa;
         font-size            : 12px;
 
         &:hover {
-            background  : #f4f4f4;
+            background  : $wild-sand;
             color       : #444;
             border-color: #aaa;
         }

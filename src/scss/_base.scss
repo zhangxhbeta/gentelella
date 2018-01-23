@@ -13,7 +13,7 @@
 }
 
 a {
-    color          : #5A738E;
+    color          : $waikawa-gray;
     text-decoration: none;
     outline        : 0;
 
@@ -464,7 +464,7 @@ ul {
     .count2 {
         width       : 100%;
         margin-left : 1px;
-        border      : 1px solid #ddd;
+        border      : 1px solid $alto;
         border-left : 0;
         border-right: 0;
         padding     : 10px 0;
