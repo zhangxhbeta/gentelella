@@ -44,7 +44,6 @@
   display: table; }
   #integration-list ul {
     padding: 0;
-<<<<<<< HEAD
     margin: 20px 0;
     color: #555555; }
     #integration-list ul > li {
@@ -128,6 +127,7 @@ a {
     color: #428bca !important; }
   a.btn-danger, a.btn-primary, a.btn-success, a.btn-warning {
     color: #fff; }
+
 .active a span.fa {
   text-align: right !important;
   margin-right: 4px; }
@@ -503,7 +503,6 @@ ul.quick-list {
     padding-top: 4px;
     white-space: nowrap;
     text-overflow: ellipsis;
-<<<<<<< HEAD
     overflow: hidden; }
     ul.quick-list li i {
       padding-right: 10px;
@@ -516,38 +515,6 @@ ul.stats-overview {
   margin-bottom: 10px; }
   ul.stats-overview li {
     display: inline-block;
-=======
-    margin: 0;
-    line-height: 28px
-}
-table.tile_info td i {
-    margin-right: 8px;
-    font-size: 17px;
-    float: left;
-    width: 18px;
-    line-height: 28px
-}
-table.tile_info td:first-child {
-    width: 83%
-}
-td span {
-    line-height: inherit
-}
-.sidebar-widget {
-    overflow: hidden
-}
-.error-number {
-    font-size: 90px;
-    line-height: 90px;
-    margin: 20px 0
-}
-.col-middle {
-    margin-top: 5%
-}
-.mid_center {
-    width: 370px;
-    margin: 0 auto;
->>>>>>> upstream/master
     text-align: center;
     padding: 0 15px;
     width: 30%;
