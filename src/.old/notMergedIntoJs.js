@@ -352,16 +352,6 @@ function init_validator() {
 
 };
 
-/* PNotify */
-
-function init_PNotify() {
-
-    if (typeof(PNotify) === 'undefined') {
-        return;
-    }
-    console.log('init_PNotify');
-};
-
 
 $(document).ready(function() {
 

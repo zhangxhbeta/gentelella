@@ -4575,6 +4575,13 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+    if (typeof(PNotify) === 'undefined') {
+        return;
+    }
+    console.log('init_PNotify');
+});
+
+$(document).ready(function() {
     //hover and retain popover when on popover content
     var originalLeave = $.fn.popover.Constructor.prototype.leave;
     $.fn.popover.Constructor.prototype.leave = function(obj) {
