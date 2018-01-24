@@ -1,0 +1,22 @@
+$(document).ready(function() {
+
+        if (typeof(starrr) === 'undefined') {
+            return;
+        }
+        console.log('init_starrr');
+
+        $(".stars").starrr();
+
+        $('.stars-existing').starrr({
+            rating: 4
+        });
+
+        $('.stars').on('starrr:change', function(e, value) {
+            $('.stars-count').html(value);
+        });
+
+        $('.stars-existing').on('starrr:change', function(e, value) {
+            $('.stars-count-existing').html(value);
+        });
+
+});
