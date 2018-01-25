@@ -6,7 +6,7 @@ The origin of this work is in the issue [#406 Using & developing this template i
 
 ## How to develop
 
-1. Install all the dependencies `npm install`
+1. Install all the dependencies `npm install && bower install`
 2. Install **gulp globally** `npm install -g gulp`
 3. Run the dev server simply calling `gulp`
 4. Change the files!
